@@ -1,0 +1,16 @@
+- name: install yum-cron package
+  yum: 
+    pkg: yum-cron
+    state: installed
+  tags: packages
+
+- name: copy yum-cron.conf
+  template: 
+    src: yum-cron.conf.j2
+    dest: /etc/yum/yum-cron.conf
+    mode: 0644
+    owner: root
+    group: root
+  notify:
+    - restart yum-cron
+

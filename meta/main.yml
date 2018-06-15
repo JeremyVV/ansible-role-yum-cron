@@ -1,0 +1,16 @@
+galaxy_info:
+  author: Jeremy Van Veelen
+  description: provides a convenient way to check for, download and apply updates automatically
+  company: none
+  license: MIT
+  min_ansible_version: 2.2
+  platforms:
+  - name:
+    - EL
+    - CentOS
+    - RHEL
+    versions:
+    - 7
+  galaxy_tags: []
+dependencies: []
+
